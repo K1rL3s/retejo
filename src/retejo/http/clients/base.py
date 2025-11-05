@@ -74,7 +74,7 @@ class BaseHttpClient:
         response_load_data = self._make_response_load_data(response)
 
         result = self._response_loader.load(
-            response_load_data,
+            response_load_data["data"],
             method_result,
         )
 

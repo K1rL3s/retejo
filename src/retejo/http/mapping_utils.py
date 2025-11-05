@@ -25,13 +25,13 @@ def mapping_response_data() -> Provider:
             map={"result": "data"},
             chain=Chain.LAST,
         ),
-        name_mapping(
-            map=[
-                (
-                    ~FisrtStackElementChecker(SequenceResult),
-                    ("data", ...),
-                ),
-            ],
-            chain=Chain.LAST,
-        ),
+        # name_mapping(
+        #     map=[
+        #         (
+        #             ~FisrtStackElementChecker(SequenceResult),
+        #             ("data", ...),
+        #         ),
+        #     ],
+        #     chain=Chain.LAST,
+        # ),
     )
